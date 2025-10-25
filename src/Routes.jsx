@@ -9,6 +9,10 @@ import Dashboard from './pages/dashboard';
 import StationInterface from './pages/station-interface';
 import OrderDetailsPage from './pages/order-details';
 import StationHub from './pages/station-hub';
+import OrderManagement from './pages/order-management';
+import CustomerManagement from './pages/customer-management';
+import ProductCatalog from './pages/product-catalog';
+import InvoiceManagement from './pages/invoice-management';
 
 const Routes = () => {
   return (
@@ -24,6 +28,10 @@ const Routes = () => {
         <Route path="/station-interface" element={<StationInterface />} />
         <Route path="/order-details" element={<OrderDetailsPage />} />
         <Route path="/station-hub" element={<StationHub />} />
+        <Route path="/order-management" element={<OrderManagement />} />
+        <Route path="/customer-management" element={<CustomerManagement />} />
+        <Route path="/product-catalog" element={<ProductCatalog />} />
+        <Route path="/invoice-management" element={<InvoiceManagement />} />
         <Route path="*" element={<NotFound />} />
       </RouterRoutes>
       </ErrorBoundary>
